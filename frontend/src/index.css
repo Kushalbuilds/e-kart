@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary: #4ade80; /* Brighter Green for contrast */
-  --primary-hover: #22c55e;
-  --bg-dark: #064e3b; /* Deep Emerald Green */
-  --bg-card: rgba(2, 44, 34, 0.7);
+  --primary: #ff8c42; /* Main Orange */
+  --primary-hover: #e6732f;
+  --bg-dark: #3b1f06; /* Deep warm brown/orange background */
+  --bg-card: rgba(44, 20, 2, 0.7);
   --text-main: #ffffff;
-  --text-muted: #d1fae5;
-  --accent: #34d399;
+  --text-muted: #f5d6c6;
+  --accent: #ffb347; /* Light orange accent */
   --glass-border: rgba(255, 255, 255, 0.15);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
