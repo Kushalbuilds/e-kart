@@ -12,7 +12,7 @@ const Home = ({ cart, onAddToCart, searchQuery }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:8080/api/products')
+    fetch('/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data);
@@ -96,7 +96,7 @@ const Home = ({ cart, onAddToCart, searchQuery }) => {
           <button 
             onClick={() => {
               setLoading(true);
-              fetch('http://localhost:8080/api/products')
+              fetch('/api/products')
                 .then(res => res.json())
                 .then(data => { setProducts(data); setLoading(false); })
                 .catch(() => setLoading(false));

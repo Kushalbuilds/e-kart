@@ -14,3 +14,5 @@ maven/
 .idea/
 *.log
 .DS_Store
+backend/src/main/resources/static/
+

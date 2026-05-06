@@ -17,7 +17,7 @@ const Admin = () => {
   }, []);
 
   const fetchProducts = () => {
-    fetch('http://localhost:8080/api/products')
+    fetch('/api/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error('Error fetching products:', err));
@@ -26,7 +26,7 @@ const Admin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    fetch('http://localhost:8080/api/products', {
+    fetch('/api/products', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...product, price: parseFloat(product.price) })
@@ -48,7 +48,7 @@ const Admin = () => {
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
-      fetch(`http://localhost:8080/api/products/${id}`, {
+      fetch(`/api/products/${id}`, {
         method: 'DELETE'
       })
       .then(() => {
